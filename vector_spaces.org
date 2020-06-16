@@ -140,3 +140,34 @@ $a0 = 0$ for every $a \in F$
 
 $(-1)v = -v$ for every $v \in V$
 
+** 1.C | Subspaces 
+
+*** Definition | Subspace 
+
+A subset $U$ of $V$ is called a subspace of $V$ if $U$ is also a vector space
+
+*** Theorem | Conditions for a subspace 
+A subset $U$ of $V$ is a subspace of $V$ iff $U$ satisfies the following three conditions:
+
+- additive identity $0 \in U$
+- closed under addition $u, w \in U$ implies that $u + w \in U$
+- closed under scalar multiplication $a \in F$ and $u \in F$ implies $au \in F$ 
+
+*** Definition | Sum of Subsets 
+
+Suppose $U_1, ..., U_m$ are subsets of $V$. The sum of $U_1, ..., U_m$, denoted $U_1 + ... + U_m$, is the set of all possible sums of elements of $U_1, ..., U_m$. 
+
+More precisely, $U_1 + ... + U_m = \{u_1 + ... + u_m : u_1 \in U_1, ..., u_m \in U_m\}$. 
+
+*** Theorem | Sum of Subspaces is the Smallest Containing Subspaces
+
+Informally, the sum of subspaces is a subspace, and is in fact the smallest subspace containing all the summands 
+
+Suppose $U_1, ..., U_m$ are subspaces of $V$. Then $U_1 + ... + U_m$ is the smallest subspace of $V$ containing $U_1, ..., U_m$. 
+
+*** Definition | Direct Sum 
+
+Suppose $U_1, ..., U_m$ are subspaces of $V$. 
+- The sum $U_1 + ... + U_m$ is called a direct sum if each element of $U_1 + ... + U_m$ can be written in only one way as a sum of $u_1 + ... + u_m$ where each $u_j \in U_j$
+- If $U_1 + ... + U_m$ is a direct sum, then $U_1 \oplus ... \oplus U_m$ denotes $U_1 + ... + U_m$, with the $\oplus$ notation serving as indication that this is a direct sum
+

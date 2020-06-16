@@ -171,3 +171,16 @@ Suppose $U_1, ..., U_m$ are subspaces of $V$.
 - The sum $U_1 + ... + U_m$ is called a direct sum if each element of $U_1 + ... + U_m$ can be written in only one way as a sum of $u_1 + ... + u_m$ where each $u_j \in U_j$
 - If $U_1 + ... + U_m$ is a direct sum, then $U_1 \oplus ... \oplus U_m$ denotes $U_1 + ... + U_m$, with the $\oplus$ notation serving as indication that this is a direct sum
 
+The definition of direct sum requires that every vector in the sum have a unique representations as an appropriate sum. 
+
+*** Theorem | Condition for a Direct Sum 
+
+Suppose $U_1, ..., U_m$ are subspaces of $V$. Then $U_1 + ... + U_m$ is a direct sum iff the only way to write 0 as a sum $u_1 + ... + u_m$, where each $u_j \in U_j$, is by taking each $u_j$ equal to 0. 
+
+*** Theorem | Direct Sum of Two Subspaces 
+
+Suppose $U$ and $W$ are subspaces of $V$. Then $U + W$ is a direct sum iff $U \cap W = \{0\}$.
+
+Sums of subspaces are analogous to unions of subsets. Similarly, direct sums of subspaces are analogous to disjoint unions of subsets. No two subspaces of a vector space can be disjoint, because both contain 0. So disjointness is replaced, at least in the case of two subspaces, with the requirement that the intersection equals $\{0\}$.
+
+

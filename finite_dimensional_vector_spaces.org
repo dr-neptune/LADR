@@ -1,0 +1,32 @@
+* Finite-Dimensional Vector Spaces
+
+Learning Objectives for this chapter: 
+- span
+- linear independence
+- bases
+- dimension 
+
+** 2.A | Span and Linear Independence
+
+*** Definition | Linear Combination 
+
+A linear combination of a list $v_1, ..., v_m$ of vectors in $V$ is a vector of the form $a_1v_1 + ... + a_mv_m$, where $a_1, ..., a_m \in F$. 
+
+*** Definition | Span
+
+The set of all linear combinations of a list of vectors $v_1, ..., v_m$ in $V$ is called the span of $v_1, ..., v_m$, denoted span$(v_1, ..., v_m)$. In other words, span$(v_1, ..., v_m) = \{a_1v_1 + ... + a_mv_m : a_1, ..., a_m \in F\}$.
+
+The span of the empty list is defined to be $\{0\}$.
+
+*** Theorem | Span is the smallest containing subspace 
+
+The span of a list of vectors in $V$ is the smallest subspace of $V$ containing all the vectors in the list. 
+
+*** Definition | Spans 
+
+If span$(v_1, ..., v_m)$ equals $V$, we say that $v_1, ..., v_m$ spans $V$
+
+*** Definition | Finite-Dimensional Vector Space 
+
+A vector space is called finite-dimensional if some list of vectors in it spans the space 
+

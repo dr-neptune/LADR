@@ -76,3 +76,36 @@ In a finite-dimensional vector space, the length of every linearly independent l
 
 Every subspace of a finite-dimensional vector space is finite-dimensional
 
+
+** 2.B | Bases 
+
+*** Definition | Basis 
+
+A basis of $V$ is a list of vectors in $V$ that is linearly independent and spans $V$
+
+*** Theorem | Criterion for Basis 
+
+A list $v_1, ..., v_n$ of vectors in $V$ is a basis iff every $v \in V$ can be written uniquely in the form $v = a_1v_1 + ... + a_nv_n$ where $a_1, ..., a_n \in F$
+
+*** Theorem | Spanning List Contains a Basis 
+
+Every spanning list in a vector space can be reduced to the basis of the vector space.
+
+This result says that given any spanning list, some (possibly none) of the vectors in it can be discarded so that the remaining list is linearly independent and still spans the vector space. 
+
+*** Corollary | Basis of Finite Dimensional Vector Space
+
+Every finite dimensional vector space has a basis 
+
+By definition, every FDVS has a spanning list. The previous result tells us that it can be reduced to a basis 
+
+*** Theorem | Linearly Independent List Extends to a Basis 
+
+Every linearly independent list of vectors in a finite-dimensional vector space can be extended to a basis of the vector space 
+
+*** Theorem | Every Subspace of $V$ is part of a direct sum equal to $V$
+
+Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then there is a subspace $W$ of $V$ such that $V = U \oplus W$. 
+
+This shows that every subspace of a finite dimensional vector space can be paired with another subspace to form a direct sum of the whole space. 
+

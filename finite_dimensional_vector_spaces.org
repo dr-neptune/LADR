@@ -111,4 +111,27 @@ This shows that every subspace of a finite dimensional vector space can be paire
 
 ** 2.C | Dimension 
 
+*** Theorem | Basis Length does not depend on basis 
 
+Any two bases of a finite-dimensional vector space have the same length
+
+*** Definition | Dimension, dim $V$
+
+- The dimension of a finite-dimensional vector space is the length of any basis of the vector space
+- The dimension of $V$ (if $V$ is finite-dimensional) is denoted by dim $V$
+
+*** Theorem | Dimension of a Subspace 
+
+If $V$ is finite-dimensional and $U$ is a subspace of $V$, then dim $U \leq$ dim $V$
+
+*** Theorem | Linearly Independent List of the Right Length is a Basis 
+
+Suppose $V$ is finite-dimensional. Then every linearly independent list of vectors in $V$ with length dim $V$ is a basis of $V$.
+
+*** Theorem | Spanning list of the right length is a basis 
+
+Suppose $V$ is finite-dimensional. Then every spanning list of vectors in $V$ with length dim $V$ is a basis of $V$. 
+
+*** Theorem | Dimension of a Sum 
+
+If $U_1$ and $U_2$ are subspaces of a finite-dimensional vector space, then dim$(U_1 + U_2)$ = dim $U_1$ + dim $U_2$ - dim $(U_1 \cap U_2)$. 

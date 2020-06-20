@@ -1,0 +1,10 @@
+* Linear Maps
+
+Learning Objectives for this Chapter 
+- Fundamental Theorem of Maps
+- The matrix of a linear map with respect to given bases
+- isomorphic vector spaces
+- product spaces
+- quotient spaces
+- the dual space of a vector space and the dual of a linear map 
+

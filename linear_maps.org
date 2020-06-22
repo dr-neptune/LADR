@@ -8,7 +8,7 @@ Learning Objectives for this Chapter
 - quotient spaces
 - the dual space of a vector space and the dual of a linear map 
 
-** The Vector Space of Linear Maps 
+** 3.A | The Vector Space of Linear Maps 
 
 *** Definition | Linear Map 
 
@@ -47,3 +47,57 @@ Multiplication of linear maps is not commutative. In other words, it is not nece
 *** Theorem | Linear Maps take 0 to 0 
 
 Suppose $T: V \to W$. Then $T(0) = 0$.
+
+** 3.B | Null Spaces and Ranges
+
+*** Definition |  null space, null $T$
+
+For $T \in \mathcal{L}(V, W)$, the null space of $T$, denoted null $T$, is the subset of $V$ consisting of those vectors that $T$ maps to 0:
+
+null $T = \{v \in V : Tv = 0\}$
+
+*** Theorem | The null space is a subspace 
+
+Suppose $T \in \mathcal{L}(V, W)$. Then null $T$ is a subspace of $V$
+
+*** Definition | Injective 
+
+A function $T : V \to W$ is called injective if $Tu = Tv$ implies $u = v$. 
+
+Many mathematicians use the term one-to-one, which means the same thing. In other words, $T$ is injective if it maps distinct inputs to distinct outputs. 
+
+*** Theorem | Injectivity is equivalent to null space equals {0}
+
+Let $T \in \mathcal{L}(V, W)$. Then $T$ is injective iff null $T = \{0\}$.
+
+This says that we can check whether a linear map is injective by checking whether 0 is the only vector that gets mapped to 0. 
+
+*** Definition | Range 
+
+For $T$ a function from $V$ to $W$, the range of $T$ is the subset of $W$ consisting of those vectors that are of the form $Tv$ for some $v \in V$. 
+
+range $T = \{Tv : v \in V\}$
+
+Some mathematicians use the word image, which means the same as range. 
+
+*** Theorem | The range is a subspace 
+
+If $T \in \mathcal{L}(V, W)$, then range $T$ is a subspace of $W$
+
+This shows that the range of each linear map is a subspace of the vector space into which it is being mapped
+
+*** Definition | Surjective 
+
+A function $T : V \to W$ is called surjective if its range equals $W$
+
+Many mathematicians use the term onto, which means the same as surjective. 
+
+*** Theorem | Fundamental Theorem of Linear Maps 
+
+Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V, W)$. Then the range $T$ is finite-dimensional and dim $V$ = dim null $T$ + dim range $T$
+
+*** Theorem | A map to a smaller dimensional space is not injective 
+
+Suppose $V$ and $W$ are finite-dimensional vector spaces such that dim $V$ > dim $W$. Then no linear map from $V$ to $W$ is injective. 
+
+

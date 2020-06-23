@@ -174,5 +174,29 @@ Suppose $A$ is an m by n matrix and $C$ is an n by p matrix. Then $(AC)_{., k} =
 
 Suppose $A$ is an m by n matrix and $c = \begin{pmatrix}c_1 \\ \vdots \\ c_n \end{pmatrix}$ is an n by 1 matrix. Then $Ac = c_1 A_{., 1} + ... + c_n A_{., n}$. In other words, $Ac$ is a linear combination of the columns of $A$, with the scalars that multiply the columns coming from $c$. 
 
+** 3.D | Invertibility and Isomorphic Vector Spaces
 
- 
+*** Definition | Invertible, Inverse 
+
+- A linear map $T \in \mathcal{L}(V, W)$ is called invertible if there exists a linear map $S \in \mathcal{L}(W, V)$ such that $ST$ equals the identity map on $V$ and $TS$ equals the identity map on $W$. 
+- A linear map $S \in \mathcal{L}(W, V)$ satisfying $ST = I$ and $TS = I$ is called an inverse of $T$
+
+*** Theorem | Inverse is unique 
+
+An invertible linear map has a unique inverse 
+
+*** Theorem | Invertibility is equivalent to injectivity and surjectivity 
+
+A linear map is invertible iff it is injective and surjective 
+
+
+*** Definition | isomorphism, isomorphic 
+
+- An isomorphism is an invertible linear map
+- Two vector spaces are called isomorphic if there is an isomorphism from one vector space onto the other one
+
+*** Theorem | Dimension shows whether vector spaces are isomorphic 
+
+Two finite-dimensional vector spaces over $F$ are isomorphic iff they have the same dimension 
+
+

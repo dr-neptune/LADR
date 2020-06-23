@@ -100,4 +100,52 @@ Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V, W)$. Then the range 
 
 Suppose $V$ and $W$ are finite-dimensional vector spaces such that dim $V$ > dim $W$. Then no linear map from $V$ to $W$ is injective. 
 
+*** Theorem | A map to a larger dimensional space is not surjective 
 
+Suppose $V$ and $W$ are finite-dimensional vector spaces such that dim $V$ < dim $W$. Then no linear map from $V \to W$ is surjective
+
+*** Theorem | Homogeneous System of Linear Equations
+
+A homogeneous system of linear equations with more variables than equations has nonzero solutions 
+
+*** Theorem | Inhomogeneous System of Linear Equations 
+
+An inhomogeneous system of linear equations with more equations than variables has no solution for some choice of the constant terms
+
+** 3.C | Matrices 
+
+*** Definition | matrix $A_{j, k}$
+
+Let $m, n$ denote positive integers. An $m$ - by - $n$ matrix $A$ is a rectangular array of elements of $F$ with $m$ rows and $n$ columns: 
+
+ $A = \begin{pmatrix} a_{1, 1} & \cdots & a_{1, n} \\ \vdots &  & \vdots \\ a_{n, 1} & \cdots & a_{n, n} \end{pmatrix}$
+
+*** Definition | matrix of a linear map $\mathcal{M}(T)$
+
+Suppose $T \in \mathcal{L}(V, W)$ and $v_1, ..., v_n$ is a basis of $V$ and $w_1, ..., w_m$ is a basis of $W$. The matrix of $T$ with respect to these bases is the m-by-n matrix $\mathcal{M}(T)$ whose entries $A_{j,k}$ are defined by $Tv_k = A_{1, k} w_1 + ... + A_{m, k} w_m$. If the bases are not clear from the context, then the notation $\mathcal{M}(T, (v_1, ..., v_n), (w_1, ..., w_m))$ is used. 
+
+*** Definition | Matrix Addition 
+
+The sum of two matrices of the same size is the matrix obtained by adding the corresponding entries in their matrices: 
+
+$\begin{pmatrix} a_{1, 1} & \cdots & a_{1, n} \\ \vdots &  & \vdots \\ a_{n, 1} & \cdots & a_{n, n} \end{pmatrix} + \begin{pmatrix} b_{1, 1} & \cdots & b_{1, n} \\ \vdots &  & \vdots \\ b_{n, 1} & \cdots & b_{n, n} \end{pmatrix} = \begin{pmatrix} a_{1, 1} + b_{1, 1} & \cdots & a_{1, n} + b_{1, n} \\ \vdots &  & \vdots \\ a_{n, 1} + b_{n, 1} & \cdots & a_{n, n} + b_{n, n} \end{pmatrix}$
+
+In other words, $(A + C)_{j, k} = A_{j, k} + C_{j, k}$. 
+
+*** Theorem | The matrix of the sum of linear maps 
+
+Suppose $S, T \in \mathcal{L}(V, W)$. Then $\mathcal{M}(S + T) = \mathcal{M}(S) + \mathcal{M}(T)$
+
+*** Definition | Scalar multiplication of a matrix 
+
+$\lambda \begin{pmatrix} a_{1, 1} & \cdots & a_{1, n} \\ \vdots &  & \vdots \\ a_{n, 1} & \cdots & a_{n, n} \end{pmatrix} = \begin{pmatrix}  \lambda a_{1, 1} & \cdots &  \lambda a_{1, n} \\ \vdots &  & \vdots \\  \lambda a_{n, 1} & \cdots &  \lambda a_{n, n} \end{pmatrix}$
+
+In other words, $(\lambda A_{j, k}) = \lambda A_{j, k}$
+
+*** Theorem | The matrix of a scalar times a linear map
+
+Suppose $\lambda \in F$ and $T \in \mathcal{L}(V, W)$. Then $\mathcal{M}(\lambda T) = \lambda \mathcal{M}(T)$
+
+*** Theorem | dim $F^{m, n} = mn$
+
+,

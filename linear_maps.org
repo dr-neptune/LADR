@@ -189,7 +189,6 @@ An invertible linear map has a unique inverse
 
 A linear map is invertible iff it is injective and surjective 
 
-
 *** Definition | isomorphism, isomorphic 
 
 - An isomorphism is an invertible linear map
@@ -199,4 +198,42 @@ A linear map is invertible iff it is injective and surjective
 
 Two finite-dimensional vector spaces over $F$ are isomorphic iff they have the same dimension 
 
+If $v_1, ..., v_n$ is a basis of $V$ and $w_1, ..., w_m$ is a basis of $W$, then for each $T \in \mathcal{L}(V, W)$, we have a matrix $\mathcal{M}(T) \in F^{m, n}$. In other words, once bases have been fixed for $V$ and $W$, $\mathcal{M}$ becomes a function s.t. $\mathcal{M}: \mathcal{L}(V, W) \to F^{m, n}$. 
+
+*** Theorem | $\mathcal{L}(V, W)$ and $F^{m, n}$ are isomorphic.
+
+Suppose $v_1, ..., v_n$ is a basis of $V$ and $w_1, ..., w_m$ is a basis of $W$. Then $\mathcal{M}$ is an isomorphism between $\mathcal{L}(V, W)$ and $F^{m, n}$
+
+*** Theorem | dim $\mathcal{L}(V, W) =$ (dim $V$)(dim $W$) 
+
+Suppose $V$ and $W$ are finite-dimensional. Then $\mathcal{L}(V, W)$ is finite-dimensional and dim $\mathcal{L}(V, W)$ = (dim $V$)(dim $W$)
+
+*** Definition | matrix of a vector $\mathcal{M}(v)$
+
+Suppose $v \in V$ and $v_1, ..., v_n$ is a basis of $V$. The matrix of $v$ with respect to this basis is the n-by-1 matrix $\mathcal{M}(v) = \begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}$
+
+where $c_1, ..., c_n$ are the scalars such that $v = c_1 v_1 + ... + c_n v_n$.
+
+*** Theorem | $\mathcal{M}(T)_{., k} = \mathcal{M}(v_k)$
+
+Where $\mathcal{M}(v_k)$ is computed with respect to the basis $w_1, ..., w_m$ of $W$
+
+Suppose $T \in \mathcal{L}(V, W)$ and $v_1, ..., v_n$ is a basis of $V$ and $w_1, ..., w_m$ is a basis of $W$. Let $1 \leq k \leq n$. Then the $k^{th}$ column of $\mathcal{M}(T)$, which is denoted by $\mathcal{M}(T)_{., k}$ equals $\mathcal{M}(v_k)$.  
+
+*** Theorem | Linear Maps act like Matrix Multiplication 
+
+Suppose $T \in \mathcal{L}(V, W)$ and $v \in V$. Suppose $v_1, ..., v_n$ is a basis of $V$ and $w_1, ..., w_m$ is a basis of $W$. Then $\mathcal{M}(Tv) = \mathcal{M}(T)\mathcal{M}(v)$
+
+*** Definition | Operator $\mathcal{L}(V)$
+
+- A linear map from a vector space to itself is called an operator
+- The notation $\mathcal{L}(V)$ denotes the set of all operators on $V$. In other words, $\mathcal{L}(V) = \mathcal{L}(V, V)$. 
+
+*** Theorem | Injectivity is equivalent to surjectivity in finite dimensions 
+
+Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V)$. Then the following are equivalent:
+
+- $T$ is invertible
+- $T$ is injective
+- $T$ is surjective 
 

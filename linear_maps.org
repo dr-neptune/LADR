@@ -237,3 +237,56 @@ Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V)$. Then the following
 - $T$ is injective
 - $T$ is surjective 
 
+** 3.E | Products and Quotients of Vector Spaces
+
+*** Definition | Product of Vector Spaces 
+
+Suppose $V_1, ..., V_m$ are vector spaces over $F$. 
++ The product $V_1 \times ... \times V_m$ is defined by $V_1 \times ... \times V_m = \{(v_1, ..., v_m) : v_1 \in V_1, ..., v_m \in V_m\}$
++ Addition on $V_1 \times ... \times V_m$ is defined by $(u_1, ..., u_m) + (v_1, ..., v_m) = (u_1 + v_1, ..., u_m + v_m)$
++ Scalar multiplication on $V_1 \times ... \times V_m$ is defined by $\lambda (v_1, ..., v_m) = (\lambda v_1, ..., \lambda v_m)$
+
+*** Theorem | Product of Vector Spaces is a Vector Space 
+
+Suppose $V_1, ..., V_m$ are vector spaces over $F$. Then $V_1 \times ... \times V_m$ is a vector space over $F$
+
+*** Theorem | Dimension of a product is the sum of dimensions
+
+Suppose $V_1, ..., V_m$ are finite dimensional vector spaces. Then $V_1 \times ... \times V_m$ is finite-dimensional and dim $(V_1 \times ... \times V_m)$ = dim$V_1$ + ... + dim$V_m$. 
+
+
+*** Theorem | Products and Direct Sums 
+
+Suppose that $U_1, ..., U_m$ are subspaces of $V$. Define a linear map $\Gamma : U_1 \times ... \times U_m \to U_1 + ... + U_m$ by $\Gamma(u_1, ..., u_m) = u_1 + ... + u_m$.
+
+Then $U_1 + ... + U_m$ is a direct sum iff $\Gamma$ is injective. 
+
+*** Theorem | A sum is a direct sum iff dimensions add up
+
+Suppose $V$ is finite-dimensional and $U_1, ..., U_m$ are subspaces of $V$. Then $U_1 + ... + U_m$ is a direct sum iff
+
+dim$(U_1 + ... + U_m)$ = dim $U_1 + ... +$ dim $U_m$
+
+*** Definition | $v + U$
+
+Suppose $v \in V$ and $U$ is a subspace of $V$. Then $v + U$ is the subset of $V$ defined by $v + U = \{v + u : u \in U\}$. 
+
+*** Definition | Affine Subset, Parallel 
+
+- An affine subset of $V$ is a subset of $V$ of the form $v + U$ for some $v \in V$ and some subspace $U$ of $V$.
+- For $v \in V$ and $U$ a subspace of $V$, the affine subset $v + U$ is said to be parallel to $U$
+
+*** Definition | Quotient Space $V / U$
+
+Suppose $U$ is a subspace of $V$. Then the quotient space $V / U$ is the set of all affine subsets of $V$ parallel to $U$. In other words, $V/U = \{v + U : v \in V\}$
+
+*** Theorem | Two affine subsets parallel to $U$ are equal or disjoint 
+
+Suppose $U$ is a subspace of $V$ and $v, w \in V$. Then the following are equivalent:
+
+- $v - w \in U$
+- $v + U = w + U$
+- $(v + U) \cap (w + U) \neq \emptyset$
+
+
+

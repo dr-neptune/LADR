@@ -288,5 +288,39 @@ Suppose $U$ is a subspace of $V$ and $v, w \in V$. Then the following are equiva
 - $v + U = w + U$
 - $(v + U) \cap (w + U) \neq \emptyset$
 
+*** Definition | Addition and Scalar Multiplication on $V / U$
+
+Suppose $U$ is a subspace of $V$. Then addition and scalar multiplication are defined on $V / U$ by
+
+$(v + U) + (w + U) = (v + w) + U$
+$\lambda (v + U) = (\lambda v) + U$
+
+for $v, w \in V$ and $\lambda \in F$
+
+*** Theorem | Quotient Space is a Vector Space 
+
+Suppose $U$ is a subspace of $V$. Then $V / U$, with the operations of addition and scalar multiplication as defined above, is a vector space. 
+
+*** Definition | Quotient Map $\pi$
+
+Suppose $U$ is a subspace of $V$. The quotient map $\pi$ is the linear map $\pi : V \to V / U$ is defined by $\pi(v) = v + U$ for $v \in V$. 
+
+*** Theorem | Dimension of a Quotient Space 
+
+Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then dim $V/U$ = dim $V$ - dim $U$
+
+*** Definition | $\tilde{T}$
+
+Suppose $T \in \mathcal{L}(V, W)$. Define $\tilde{T} : V / (null T) \to W$ by $\tilde{T}(v + nullT) = Tv$
+
+*** Theorem | Null Space and Range of $\tilde{T}$
+
+Suppose $T \in \mathcal{L}(V, W)$. Then 
+
+- $\tilde{T}$ is a linear map from $V / (null T)$ to $W$
+- $\tilde{T}$ is injective
+- range $\tilde{T}$ = range $T$
+- $V / (null T)$ is isomorphic to range $T$
+
 
 

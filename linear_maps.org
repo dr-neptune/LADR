@@ -358,4 +358,15 @@ If $T \in \mathcal{L}(V, W)$, then the dual map of $T$ is the linear map $T' \in
 - $(\lambda T)' = \lambda T'$ for all $\lambda \in F$ and all $T \in \mathcal{L}(V, W)$
 - $(ST)' = T'S'$ for all $T \in \mathcal{L}(U, W)$ and all $S \in \mathcal{L}(V, W)$
 
+*** Definition | annihilator $U^0$
+
+For $U \subset V$, the annihilator of $U$, denoted $U^0$, is defined by $U^0 = \{\phi \in V' : \phi(u) = 0 \forall u \in U\}$
+
+*** Theorem | The annihilator is a subspace 
+
+Suppose $U \subset V$. Then $U^0$ is a subspace of $V'$
+
+*** Theorem | Dimension of the Annihilator 
+
+Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then dim $U$ + dim $U^0$ = dim $V$. 
 

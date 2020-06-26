@@ -322,5 +322,40 @@ Suppose $T \in \mathcal{L}(V, W)$. Then
 - range $\tilde{T}$ = range $T$
 - $V / (null T)$ is isomorphic to range $T$
 
+** 3.F | Duality
+
+Linear maps into the scalar field $F$ play a special role in linear algebra, and thus get a special name: 
+
+*** Definition | Linear Functional 
+
+A linear functional on $V$ is a linear map from $V \to F$. In other words, a linear functional is an element of $\mathcal{L}(V, F)$. 
+
+*** Definition | dual space $V'$
+
+The dual space of $V$, denoted $V'$, is the vector space of all linear functionals on $V$. In other words, $V' = \mathcal{L}(V, F)$. 
+
+*** Theorem | dim $V'$ = dim $V$
+
+Suppose $V$ is finite dimensional. Then $V'$ is also finite-dimensional and dim $V'$ = dim $V$.
+
+This follows from dim $\mathcal{L}(V, W)$ = $(dim V)(dim W)$
+
+*** Definition | Dual Basis 
+
+If $v_1, ..., v_n$ is a basis of $V$, then the dual basis of $v_1, ..., v_n$ is the list $\phi_1, ..., \phi_n$ of elements of $V'$ where each $\phi_j$ is the linear functional on $V$ such that $\phi_j(v_k) = 1$ if $k = j$, and 0 otherwise.
+
+*** Theorem | Dual Basis is a Basis of the Dual Space 
+
+Suppose $V$ is finite-dimensional. Then the dual basis of a basis of $V$ is a basis of $V'$. 
+
+*** Definition | dual map $T'$
+
+If $T \in \mathcal{L}(V, W)$, then the dual map of $T$ is the linear map $T' \in \mathcal{L}(W', V')$ defined by $T'(\phi) = \phi \circ T$ for $\phi \in W'$ 
+
+*** Theorem | Algebraic Properties of Dual Maps 
+
+- $(S + T)' = S' + T'$ for all $S, T \in \mathcal{L}(V, W)$
+- $(\lambda T)' = \lambda T'$ for all $\lambda \in F$ and all $T \in \mathcal{L}(V, W)$
+- $(ST)' = T'S'$ for all $T \in \mathcal{L}(U, W)$ and all $S \in \mathcal{L}(V, W)$
 
 

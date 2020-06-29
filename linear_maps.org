@@ -370,3 +370,45 @@ Suppose $U \subset V$. Then $U^0$ is a subspace of $V'$
 
 Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then dim $U$ + dim $U^0$ = dim $V$. 
 
+*** Theorem | The null space of $T'$
+
+Suppose $V$ and $W$ are finite-dimensional and $T \in \mathcal{L}(V, W)$. Then 
+- null $T'$ = $(\mathrm{range} T)^0$
+- dim null $T'$ = dim null $T$ + dim $W$ - dim $V$
+
+*** Theorem | $T$ surjective is equivalent to $T'$ injective 
+
+Suppose $V$ and $W$ are finite-dimensional and $T \in \mathcal{L}(V, W)$. Then $T$ is surjective iff $T'$ is injective
+
+*** Theorem | The range of $T'$
+
+Suppose $V$ and $W$ are finite-dimensional and $T \in \mathcal{L}(V, W)$. Then 
+- dim range $T'$ = dim range $T$
+- range $T'$ = (null $T$)^0 
+
+*** Theorem | $T$ injective is equivalent to $T'$ surjective 
+
+Suppose $V$ and $W$ are finite-dimensional and $T \in \mathcal{L}(V, W)$. Then $T$ is injective iff $T'$ is surjective. 
+
+*** Definition | transpose $A^t$
+
+The transpose of a matrix $A$, denoted $A^t$, is the matrix obtained from $A$ by interchanging the rows and the columns. More specifically, if $A$ is an m-by-n matrix, then $A^t$ is the n-by-m matrix whose entries are given by the equation $(A^t)_{k, j} = A_{j, k}$
+
+The Transpose has nice algebraic properties:
+- $(A + C)^t = A^t + C^t$
+- $(\lambda A)^t = \lambda A^t$
+
+*** Theorem | The Transpose of the Product of Matrices 
+
+If $A$ is an m-by-n matrix and $C$ is an n-by-p matrix, then $(AC)^t = C^tA^t$
+
+*** Theorem | The matrix of $T'$ is the transpose of the matrix of T
+
+Suppose $T \in \mathcal{L}(V, W)$. Then $\mathcal{M}(T') = (\mathcal{M}(T))^t$
+
+*** Definition | row rank, column rank 
+
+Suppose $A$ is an m-by-n matrix with entries in $F$
+
+- The row rank of $A$ is the dimension of the span of the rows of $A$ in $F^{1, n}$
+- The column rank of $S$ is the dimension of the span of the columns of $A$ in $F^{m, 1}$

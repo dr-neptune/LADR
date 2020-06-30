@@ -1,0 +1,56 @@
+* Polynomials 
+
+Learning Objectives for this Chapter: 
+- Division Algorithm for Polynomials
+- factorization of polynomials over $C$
+- factorization of polynomials over $R$
+
+** 4.1 | Polynomials 
+
+This chapter is 1 section. 
+
+*** Definition re $z$, Im $z$
+
+Suppose $z = a + bi$, where $a, b \in R$. 
+- The real part of $z$, denoted Re $z$, is defined by Re $z = a$
+- The imaginary part of $z$, denoted Im $z$, is defined by Im $z = b$
+
+*** Definition | complex conjugate $\bar{z}$, absolute value $|z|$
+
+Suppose $z \in C$. 
+
+- The complex conjugate of $z \in C$, denoted $\bar{z}$, is defined by $\bar{z} =$ Re $z$ - (Im $z$)$i$
+- The absolute value of a complex number $z$, denoted $|z|$, is defined by $|z| = \sqrt{(\mathrm{Re}z)^2 + (\mathrm{Im}z)^2}$
+
+*** Theorem | Properties of Complex Numbers 
+
+Suppose $w, z \in C$. Then 
+
+- sum of $z$ and $\bar{z}$ 
+  - $z + \bar{z} = 2 \mathrm{Re}z$
+
+- difference of $z$ and $\bar{z}$
+  - $z - \bar{z} = 2 \mathrm{Im}zi$
+
+- product of $z$ and $\bar{z}$
+  - $z\bar{z} = |z|^2$
+
+- Additivity and Multiplicativity of Complex Conjugate 
+  - $\bar{w + z} = \bar{w} + \bar{z}$ and $\bar{wz} = \bar{w}\bar{z}$
+
+- conjugate of conjugate 
+  - $\bar{\bar{z}} = z$
+
+- real and imaginary parts are bounded by $|z|$
+  - $|\mathrm{Re} z| \leq |z|$ and $|\mathrm{Im}z| \leq |z|$
+
+- Absolute value of the complex conjugate 
+  - $|\bar{z}| = |z|$
+
+- multiplicativity of absolute value 
+  - $|wz| = |w||z|$
+
+- Triangle Inequality 
+  - $|w + z| \leq |w| + |z|$
+
+

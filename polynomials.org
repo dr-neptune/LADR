@@ -53,4 +53,30 @@ Suppose $w, z \in C$. Then
 - Triangle Inequality 
   - $|w + z| \leq |w| + |z|$
 
+*** Theorem | If a polynomial is the zero function, then all coefficients are 0 
+
+Suppose $a_0, ..., a_m \in F$. If $a_0 + a_1z + ... + a_mz^m = 0$ for every $z \in F$, then $a_0 = ... = a_m = 0$
+
+This result implies that the coefficients of a polynomial are uniquely determined (because if a polynomial had two different sets of coefficients, then subtracting the two representations of the polynomial would give a contradiction to the result above). 
+
+*** Theorem | Division Algorithm for Polynomials 
+
+Suppose that $p, s \in \mathcal{P}(F)$, with $s \neq 0$. Then there exist unique polynomials with $q, r \in \mathcal{P}(F)$ such that $p = sq + r$ and deg $r <$ deg $s$
+
+*** Definition | Zero of a Polynomial 
+
+A number $\lambda \in F$ is called a zero (or root) of a polynomial $p \in \mathcal{P}(F)$ if $p(\lambda) = 0$. 
+
+*** Definition | Factor
+
+A polynomial $s \in \mathcal{P}(F)$ is called a factor of $p \in \mathcal{P}(F)$ if there exists a polynomial $q \in \mathcal{P}(F)$ such that $p = sq$
+
+*** Theorem | Each zero of a polynomial corresponds to a degree-1 factor 
+
+Suppose $p \in \mathcal{P}(F)$ and $\lambda \in F$. Then $p(\lambda) = 0$ iff there is a polynomial $q \in \mathcal{P}(F)$ such that $p(z) = (z - \lambda)q(z)$ for every $z \in F$. 
+
+*** Theorem | A polynomial has at most as many zeros as its degree 
+
+Suppose $p \in \mathcal{P}(F)$ is a polynomial with degree $m \geq 0$. Then $p$ has at most $m$ distinct zeros in $F$. 
+
 

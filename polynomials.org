@@ -5,7 +5,7 @@ Learning Objectives for this Chapter:
 - factorization of polynomials over $C$
 - factorization of polynomials over $R$
 
-** 4.1 | Polynomials 
+** 4.A | Polynomials 
 
 This chapter is 1 section. 
 
@@ -79,4 +79,19 @@ Suppose $p \in \mathcal{P}(F)$ and $\lambda \in F$. Then $p(\lambda) = 0$ iff th
 
 Suppose $p \in \mathcal{P}(F)$ is a polynomial with degree $m \geq 0$. Then $p$ has at most $m$ distinct zeros in $F$. 
 
+*** Theorem | Fundamental Theorem of Algebra 
+
+Every nonconstant polynomial with complex coefficients has a zero 
+
+*** Theorem | Factorization of a Polynomial Over $C$
+
+If $p \in \mathcal{P}(C)$ is a nonconstant polynomial, then $p$ has a unique factorization (except for the order of the factors) of the form $p(z) = c(z - \lambda_1)...(z - \lambda_m)$ where $c, \lambda_1, ..., \lambda_m \in C$
+
+*** Theorem | Polynomials with real coefficients have zeros in pairs 
+
+Suppose $p \in \mathcal{P}(C)$ is a polynomial with real coefficients. If $\lambda \in C$ is a zero of $p$, then so is $\bar{\lambda}$
+
+*** Theorem | Factorization of a Quadratic Polynomial 
+
+Suppose $b, c \in R$. Then there is a polynomial factorization of the form $x^2 + bx + c = (x - \lambda_1)(x - \lambda_2)$ with $\lambda_1, \lambda_2 \in R$ iff $b^2 \geq 4c$
 

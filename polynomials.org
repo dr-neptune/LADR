@@ -95,3 +95,8 @@ Suppose $p \in \mathcal{P}(C)$ is a polynomial with real coefficients. If $\lamb
 
 Suppose $b, c \in R$. Then there is a polynomial factorization of the form $x^2 + bx + c = (x - \lambda_1)(x - \lambda_2)$ with $\lambda_1, \lambda_2 \in R$ iff $b^2 \geq 4c$
 
+*** Theorem | Factorization of a Polynomial over $R$
+
+Suppose $p \in \mathcal{P}$ is a nonconstant polynomial. Then $p$ has a unique factorization (except for the order of the factors) of the form 
+$p(x) = c(x - \lambda_1)...(x - \lambda_m)(x^2 + b_1x + c_1)...(x^2 + b_Mx + c_M)$, where $c, \lambda_1, ..., \lambda_m, b_1, ..., b_M, c_1, ..., c_M \in R$ with $b_j^2 < 4c_j$ for each $j$. 
+

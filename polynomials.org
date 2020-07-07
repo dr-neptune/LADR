@@ -2,8 +2,8 @@
 
 Learning Objectives for this Chapter: 
 - Division Algorithm for Polynomials
-- factorization of polynomials over $C$
-- factorization of polynomials over $R$
+- factorization of polynomials over $C$ 
+- factorization of polynomials over $R$ 
 
 ** 4.A | Polynomials 
 

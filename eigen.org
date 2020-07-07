@@ -1,2 +1,53 @@
 * Eigenvalues, Eigenvectors, and Invariant Subspaces 
 
+Linear maps from one vector space to another vector space were the objects of study in chapter 3. Now we investigate linear maps from a finite-dimensional vector space to itself. 
+
+Learning Objectives: 
+- Invariant Subspaces
+- Eigenvalues, Eigenvectors, Eigenspaces 
+- Each operator on a fine-dimensional complex vector space has an eigenvalue and an upper-triangular matrix with respect to some basis 
+
+** 5.A | Invariant Subspaces 
+
+The notion of a subspace that gets mapped into itself is sufficiently important to deserve a name
+
+*** Definition | Invariant Subspace
+
+Suppose $T \in \mathcal{L}(V)$. A subspace $U$ of $V$ is called invariant under $T$ if $u \in U$ implies $Tu \in U$. 
+
+In other words, $U$ is invariant under $T$ if $T|_U$ is an operator on $U$
+
+The equation $Tv = \lambda v$ is important enough that the vectors $v$ and scalars $\lambda$ satisfying it are given special names: 
+
+*** Definition | Eigenvalue 
+
+Suppose $T \in \mathcal{L}(V)$. A number $\lambda \in F$ is called an eigenvalue of $T$ if there exists $v \in V$ such that $v \neq 0$ and $Tv = \lambda v$. 
+
+*** Theorem | Equivalent Conditions to be an Eigenvalue 
+
+Suppose $V$ is finite-dimensional, $T \in \mathcal{L}(V)$, and $\lambda \in F$. Then the following are equivalent 
+
+- $\lambda$ is an eigenvalue of $T$
+- $T - \lambda I$ is not injective
+- $T - \lambda I$ is not surjective
+- $T - \lambda I$ is not invertible
+
+*** Definition | Eigenvector 
+
+Suppose $T \in \mathcal{L}(V)$ and $\lambda \in F$ is an eigenvalue of $T$. A vector $v \in V$ is called an eigenvector of $T$ corresponding to $\lambda$ if $v \neq 0$ and $Tv = \lambda v$. 
+
+*** Theorem | Linearly Independent Eigenvectors 
+
+Let $T \in \mathcal{L}(V)$. Suppose $\lambda_1, ..., \lambda_m$ are distinct eigenvalues of $T$ and $v_1, ..., v_m$ are corresponding eigenvectors. Then $v_1, ..., v_m$ is linearly independent. 
+
+*** Theorem | Number of Eigenvalues 
+
+Suppose $V$ is finite-dimensional. Then each operator on $V$ has at most dim $V$ distinct eigenvalues. 
+
+*** Definition | $T|_U$ and $T/U$
+
+Suppose $T \in \mathcal{L}(V)$ and $U$ is a subspace of $V$ invariant under $T$
+
+- The restriction operator $T|_U \in \mathcal{L}(U)$ is defined by $T|_U (u) = Tu$ for $u \in U$
+- The quotient operator $T/U \in \mathcal{L}(V/U)$ is defined by $(T/U)(v + U) = Tv + U$ for $v \in V$ 
+

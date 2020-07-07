@@ -51,3 +51,26 @@ Suppose $T \in \mathcal{L}(V)$ and $U$ is a subspace of $V$ invariant under $T$
 - The restriction operator $T|_U \in \mathcal{L}(U)$ is defined by $T|_U (u) = Tu$ for $u \in U$
 - The quotient operator $T/U \in \mathcal{L}(V/U)$ is defined by $(T/U)(v + U) = Tv + U$ for $v \in V$ 
 
+
+** 5.B | Eigenvectors and Upper-Triangular Matrices 
+
+The main reason that a richer theory ecists for operators (which map a vector space onto itself) than for more general linear maps is that operators can be raised to powers. We begin this section by defining that notion and the key concept of applying a polynomial to an operator. 
+
+*** Definition | $T^m$
+
+Suppose $T \in \mathcal{L}(V)$ and $m$ is a positive integer. 
+
+- $T^m$ is defined by $T^m = T ... T$
+- $T^0$ is defined to be the identity operator $I$ on $V$
+- If $T$ is invertible with inverse $T^{-1}$, then $T^{-m}$ is defined by $(T^{-1})^m$
+
+Similiarly,
+
+- $T^m T^n = T^{m + n}$
+- $(T^m)^n = T^{mn}$
+
+*** Definition | $p(T)$
+
+Suppose $T \in \mathcal{L}(V)$ and $p \in \mathcal{P}(F)$ is a polynomial given by $p(z) = a_0 + a_1 z + a_2 z^2 + ... + a_m z^m$ for $z \in F$. Then $p(T)$ is the operator defined by $p(T) = a_0 I + a_1 T + a_2 T^2 + ... + a_m T^m$.
+
+This is just a new use of the symbol $p$ because we are applying it to operators, not just elements of $F$. 

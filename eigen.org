@@ -74,3 +74,49 @@ Similiarly,
 Suppose $T \in \mathcal{L}(V)$ and $p \in \mathcal{P}(F)$ is a polynomial given by $p(z) = a_0 + a_1 z + a_2 z^2 + ... + a_m z^m$ for $z \in F$. Then $p(T)$ is the operator defined by $p(T) = a_0 I + a_1 T + a_2 T^2 + ... + a_m T^m$.
 
 This is just a new use of the symbol $p$ because we are applying it to operators, not just elements of $F$. 
+
+*** Definition | Product of Polynomials 
+
+If $p, q \in \mathcal{P}(F)$, then $pq \in \mathcal{P}(F)$ is the polynomial defined by $(pq)(z) = p(z)q(z)$ for $z \in F$. 
+
+*** Theorem | Multiplicative Properties 
+
+Suppose $p, q \in \mathcal{P}(F)$ and $T \in \mathcal{L}(V)$. Then 
+- $(pq)(T) = p(T)q(T)$
+- $p(T)q(T) = q(T)p(T)$
+
+
+Now we come to one of the central results about operators on complex vector spaces
+
+*** Theorem | Operators on Complex Vector Spaces have an Eigenvalue 
+
+Every operator on a finite-dimensional, nonzero, complex vector space has an eigenvalue 
+
+*** Definition | matrix of an operator, $\mathcal{M}(T)$
+
+Suppose $T \in \mathcal{L}(V)$ and $v_1, ..., v_n$ is a basis of $V$. The matrix of $T$ with respect to this basis is the n-by-n matrix 
+
+$\mathcal{M}(T) =  \begin{pmatrix} A_{1, 1} & \cdots & A_{1, n} \\ \vdots &  & \vdots \\ A_{n, 1} & \cdots & A_{n, n} \end{pmatrix}$
+
+
+whose entries $A_{j, k}$ are defined by $Tv_k = A_{1, k} v_1 + ... + A_{n, k} v_n$
+
+If the basis is not clear from the context, then the notation $\mathcal{M}(T, (v_1, ..., v_n))$ is used. 
+
+*** Definition | Diagonal of a Matrix 
+
+The diagonal of a square matrix consists of the entries along the line from the upper left corner to the bottom right corner 
+
+*** Definition | Upper-Triangular Matrix 
+
+A matrix is called upper triangular if all the entries below the diagonal equal 0 
+
+*** Theorem | Conditions for Upper-Triangular Matrix 
+
+Suppose $T \in \mathcal{L}(V)$ and $v_1, ..., v_n$ is a basis of $V$. Then the following are equivalent 
+
+- the matrix of $T$ with respect to $v_1, ..., v_n$ is upper triangular
+- $Tv_j \in$ span$(v_1, ..., v_j)$ for each $j = 1, ..., n$
+- span$(v_1, ..., v_j)$ is invariant under $T$ for each $j = 1, ..., n$
+
+

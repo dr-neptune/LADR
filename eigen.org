@@ -51,7 +51,6 @@ Suppose $T \in \mathcal{L}(V)$ and $U$ is a subspace of $V$ invariant under $T$
 - The restriction operator $T|_U \in \mathcal{L}(U)$ is defined by $T|_U (u) = Tu$ for $u \in U$
 - The quotient operator $T/U \in \mathcal{L}(V/U)$ is defined by $(T/U)(v + U) = Tv + U$ for $v \in V$ 
 
-
 ** 5.B | Eigenvectors and Upper-Triangular Matrices 
 
 The main reason that a richer theory ecists for operators (which map a vector space onto itself) than for more general linear maps is that operators can be raised to powers. We begin this section by defining that notion and the key concept of applying a polynomial to an operator. 
@@ -119,4 +118,37 @@ Suppose $T \in \mathcal{L}(V)$ and $v_1, ..., v_n$ is a basis of $V$. Then the f
 - $Tv_j \in$ span$(v_1, ..., v_j)$ for each $j = 1, ..., n$
 - span$(v_1, ..., v_j)$ is invariant under $T$ for each $j = 1, ..., n$
 
+*** Theorem | Over $C$, every operator has an upper triangular matrix 
 
+Suppose $V$ is a finite-dimensional complex vector space and $T \in \mathcal{L}(V)$. Then $T$ has an upper triangular matrix with respect to some basis of $V$. 
+
+*** Theorem | Determination of Invertibility from Upper Triangular Matrix 
+
+Suppose $T \in \mathcal{L}(V)$ has an upper triangular matrix with respect to some basis of $V$. Then $T$ is invertible iff all the entries on the diagonal of that upper triangular matrix are non-zero. 
+
+*** Theorem | Determination of Eigenvalues from Upper-Triangular Matrix 
+
+Suppose $T \in \mathcal{L}(V)$ has an upper-triangular matrix with respect to some basis of $V$. Then the eigenvalues of $T$ are precisely the entries on the diagonal of that upper triangular matrix. 
+
+Once the eigenvalues of an operator on $F^n$ are known, the eigenvectors can be found easily using Gaussian elimination. 
+
+
+** 5.C | Eigenspaces and Diagonal Matrices 
+
+*** Definition | Diagonal Matrix 
+
+A diagonal matrix is a square matrix that is 0 everywhere except possibly along the diagonal
+
+*** Definition | Eigenspace, $E(\lambda, T)$
+
+Suppose $T \in \mathcal{L}(V)$ and $\lambda \in F$. The eigenspace of $T$ corresponding to $\lambda$, denoted $E(\lambda, T)$, is defined by $E(\lambda, T) = \mathrm{null}(T - \lambda I)$. 
+
+In other words, $E(\lambda, T)$ is the set of all eigenvectors of $T$ corresponding to $\lambda$, along with the 0 vector. 
+
+*** Theorem | Sum of Eigenspaces is a Direct Sum 
+
+Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V)$. Suppose also that $\lambda_1, ..., \lambda_m$ are distinct eigenvalues of $T$. Then $E(\lambda_1, T) + ... + E(\lambda_m, T)$ is a direct sum. Furthermore, dim $E(\lambda_1, T) + ... +$ dim $E(\lambda_m, T) \leq$ dim $V$
+
+*** Definition | Diagonalizable 
+
+An operator $T \in \mathcal{L}(V)$ is called diagonalizable if the operator has a diagonal matrix with respect to some basis of $V$

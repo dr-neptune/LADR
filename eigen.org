@@ -5,7 +5,7 @@ Linear maps from one vector space to another vector space were the objects of st
 Learning Objectives: 
 - Invariant Subspaces
 - Eigenvalues, Eigenvectors, Eigenspaces 
-- Each operator on a fine-dimensional complex vector space has an eigenvalue and an upper-triangular matrix with respect to some basis 
+- Each operator on a finite-dimensional complex vector space has an eigenvalue and an upper-triangular matrix with respect to some basis 
 
 ** 5.A | Invariant Subspaces 
 
@@ -132,7 +132,6 @@ Suppose $T \in \mathcal{L}(V)$ has an upper-triangular matrix with respect to so
 
 Once the eigenvalues of an operator on $F^n$ are known, the eigenvectors can be found easily using Gaussian elimination. 
 
-
 ** 5.C | Eigenspaces and Diagonal Matrices 
 
 *** Definition | Diagonal Matrix 
@@ -152,3 +151,19 @@ Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V)$. Suppose also that 
 *** Definition | Diagonalizable 
 
 An operator $T \in \mathcal{L}(V)$ is called diagonalizable if the operator has a diagonal matrix with respect to some basis of $V$
+
+*** Theorem | Conditions Equivalent to Diagonalizability 
+
+Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V)$. Let $\lambda_1, ..., \lambda_m$ denote the distinct eigenvalues of $T$. Then the following are equivalent: 
+
+- $T$ is diagonalizable
+- $V$ has a basis consisting of eigenvectors of $T$
+- there exist 1-dimensional subspaces $U_1, ..., U_n$  of $V$, each invariant under $T$, such that $V = U_1 \oplus ... \oplus U_n$
+- $V = E(\lambda_1, T) \oplus ... \oplus E(\lambda_m, T)$
+- dim $V$ = dim $E(\lambda_1, T) + ... +$ dim $E(\lambda_m, T)$
+
+*** Theorem | Enough eigenvalues implies diagonalizability
+
+If $T \in \mathcal{L}(V)$ has dim $V$ distinct eigenvalues, then $T$ is diagonalizable 
+
+

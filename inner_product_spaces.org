@@ -10,3 +10,62 @@ In making the definition of a vector space, we generalized the linear structure 
 
 ** 6.A | Inner Products and Norms 
 
+The length of the vector x is called the *norm* of x, and is denoted $\lVert x \rVert$. Thus for $x = (x_1, ..., x_n) \in R^n$, we have $\lVert x \rVert = \sqrt{x_1^2  + ... + x_n^2}$.
+
+The norm is not linear on $R^n$ . To inject linearity into the discussion, we introduce the dot product. 
+
+*** Definition | Dot Product 
+
+For $x, y \in R^n$, the dot product of $x$ and $y$, denoted $x \cdot y$, is defined by $x \cdot y = x_1 y_1 + ... + x_n y_n$, where $x = (x_1, ..., x_n)$ and $y = (y_1, ..., y_n)$. 
+
+The dot product on $R^n$ has the following properties: 
+
+- $x \cdot x \geq 0$ for all $x \in R^n$
+- $x \cdot x = 0$ iff $x = 0$
+- for $y \in R^n$ fixed, the map from $R^n \to R$ that sends $x \in R^n$ to $x \cdot y$ is linear
+- $x \cdot y = y \cdot x$ for all $x, y \in R^n$ 
+
+*** Definition | Inner Product 
+
+An inner product on $V$ is a function that takes each ordered pair $(u, v)$ of elements of $V$ to a number $\langle u, v \rangle \in F$ and has the following properties: 
+
+- positivity : $\langle v, v \rangle \geq 0$ for all $v \in V$
+- definiteness : $\langle v, v \rangle = 0$ iff $v = 0$
+- additivity in first slot : $\langle u + v, w \rangle = \langle u, w \rangle + \langle v, w \rangle$ for all $u, v, w \in V$
+- homogeneity in first slow : $\langle \lambda u, v \rangle = \lambda \langle u, v \rangle$ for all $\lambda \in F$ and all $u, v \in V$
+- conjugate symmetry : $\langle u, v \rangle = \bar{\langle v, u \rangle}$ for all $u, v \in V$
+
+*** Definition | Inner Product Space
+
+An inner product space is a vector space $V$ along with an inner product on $V$. 
+
+*** Theorem | Basic Properties of an Inner Product 
+
+- For each fixed $u \in V$, the function that takes $v \to \langle v, u \rangle$ is a linear map from $V \to F$
+- $\langle 0, u \rangle = 0$ for every $u \in V$ and vice versa
+- $\langle u, v + w \rangle = \langle u, v \rangle + \langle u, w \rangle$ for all $u, v, w \in V$
+- $\langle u, \lambda v \rangle = \bar{\lambda} \langle u, v \rangle$ for all $\lambda \in F$ and $u, v \in V$
+
+*** Definition | norm, $\lVert v \rVert$
+
+For $v \in V$, the norm of $v$, denoted $\lVert v \rVert$, is defined by $\lVert v \rVert = \sqrt{\langle v, v \rangle}$
+
+*** Theorem | Basic Properties of the Norm 
+
+Suppose $v \in V$
+
+- $\lVert v \rVert = 0$ iff $v = 0$
+- $\lVert \lambda v \rVert = \lvert \lambda \rvert \lVert v \rVert$ for all $\lambda \in F$
+
+*** Definition | Orthogonal 
+
+Two vectors $u, v \in V$ are called orthogonal if $\langle u, v \rangle = 0$ 
+
+*** Theorem | Orthogonality and 0 
+
+- 0 is orthogonal to every vector in $V$
+- 0 is the only vector in $V$ that is orthogonal to itself 
+
+*** Theorem | Pythagorean Theorem 
+
+Suppose $u$ and $v$ are orthogonal vectors in $V$. Then $\lVert u + v \rVert^2 = \lVert u \rVert ^2 + \lVert v \rVert ^2$

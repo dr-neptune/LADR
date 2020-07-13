@@ -32,7 +32,7 @@ An inner product on $V$ is a function that takes each ordered pair $(u, v)$ of e
 - positivity : $\langle v, v \rangle \geq 0$ for all $v \in V$
 - definiteness : $\langle v, v \rangle = 0$ iff $v = 0$
 - additivity in first slot : $\langle u + v, w \rangle = \langle u, w \rangle + \langle v, w \rangle$ for all $u, v, w \in V$
-- homogeneity in first slow : $\langle \lambda u, v \rangle = \lambda \langle u, v \rangle$ for all $\lambda \in F$ and all $u, v \in V$
+- homogeneity in first slot : $\langle \lambda u, v \rangle = \lambda \langle u, v \rangle$ for all $\lambda \in F$ and all $u, v \in V$
 - conjugate symmetry : $\langle u, v \rangle = \bar{\langle v, u \rangle}$ for all $u, v \in V$
 
 *** Definition | Inner Product Space
@@ -89,5 +89,40 @@ This inequality is an equality iff one of $u, v$ is a non-negative multiple of t
 *** Theorem | Parallelogram Equality 
 
 Suppose $u, v \in V$. Then $\lVert u + v \rVert^2 + \lVert u - v \rVert^2 = 2 (\lVert u \rVert ^2 + \lVert v \rVert^2)$. 
+
+** 6.B | Orthonormal Bases 
+
+*** Definition | Orthonormal 
+
+- A list of vectors is called orthonormal if each vector in the list has norm 1 and is orthogonal to all the other vectors in the list
+- A list $e_1, ..., e_m$ of vectors in $V$ is orthonormal if $\langle e_j, e_k \rangle = 1$ if $j = k$, and 0 otherwise 
+
+*** Theorem | The Norm of an Orthonormal Linear Combination 
+
+If $e_1, ..., e_m$ is an orthonormal list of vectors in $V$, then $\lVert a_1 e_1 + ... + a_m e_m \rVert^2 = |a_1|^2 + ... + |a_m|^2$ for all $a_1, ..., a_m \in F$. 
+
+*** Theorem | An Orthonormal List is Linearly Independent 
+
+Every orthonormal list of vectors is linearly independent. 
+
+*** Definition | Orthonormal Basis 
+
+An orthonormal basis of $V$ is an orthnormal list of vectors in $V$ that is also a basis of $V$
+
+*** Theorem | An Orthonormal List of the Right Length is an Orthonormal Basis 
+
+Every orthonormal list of vectors in $V$ with length dim $V$ is an orthonormal basis of $V$
+
+*** Theorem | Writing a Vector as a Linear Combination of Orthonormal Basis 
+
+Suppose $e_1, ..., e_n$ is an orthonormal basis of $V$ and $v \in V$. Then $v = \langle v, e_1 \rangle e_1 + ... + \langle v, e_n \rangle e_n$ and $\lVert v \rVert^2 = |\langle v, e_1 \rangle |^2 + ... + |\langle v, e_n \rangle |^2$.
+
+*** Theorem | Gram-Schmidt Procedure
+
+This gives a method for turning a linearly independent list into an orthonormal list with the same span as the original list 
+
+Suppose $v_1, ..., v_m$ is a linearly independent list of vectors in $V$. Let $e_1 = \frac{v_1}{\lVert v_1 \rVert}$. For $j = 2, ..., m$, define $e_j$ inductively by $e_j = \frac{v_j - \langle v_j, e_1 \rangle - ... - \langle v_j, e_{j - 1} \rangle e_{j - 1}}{\lVert v_j - \langle v_j, e_1 \rangle - ... - \langle v_j, e_{j - 1} \rangle e_{j - 1} \rVert}$. 
+
+Then $e_1, ..., e_m$ is an orthonormal list of vectors in $V$ such that span$(v_1, ..., v_j)$ = span $(e_1, ..., e_j)$ for $j = 1, ..., m$
 
 

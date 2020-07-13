@@ -69,3 +69,25 @@ Two vectors $u, v \in V$ are called orthogonal if $\langle u, v \rangle = 0$
 *** Theorem | Pythagorean Theorem 
 
 Suppose $u$ and $v$ are orthogonal vectors in $V$. Then $\lVert u + v \rVert^2 = \lVert u \rVert ^2 + \lVert v \rVert ^2$
+
+*** Theorem | An Orthogonal Decomposition 
+
+Suppose $u, v \in V$, with $v \neq 0$. Set $c = \frac{\langle u, v \rangle}{\lVert v \rVert^2}$ and $w = u - \frac{\langle u, v \rangle}{\lVert v \rVert^2} v$. Then $\langle w, v \rangle = 0$ and $u = cv + w$. 
+
+*** Theorem | Cauchy-Schwarz Inequality 
+
+Suppose $u, v \in V$. Then $\lvert \langle u, v \rangle \rvert \leq \lVert u \rVert \lVert v \rVert$. 
+
+This inequality is an equality iff one of $u, v$ is a scalar multiple of each other.
+
+*** Theorem | Triangle Inequality 
+
+Suppose $u, v \in V$. Then $\lVert u + v \rVert \leq \lVert u \rVert + \lVert v \rVert$. 
+
+This inequality is an equality iff one of $u, v$ is a non-negative multiple of the other.
+
+*** Theorem | Parallelogram Equality 
+
+Suppose $u, v \in V$. Then $\lVert u + v \rVert^2 + \lVert u - v \rVert^2 = 2 (\lVert u \rVert ^2 + \lVert v \rVert^2)$. 
+
+

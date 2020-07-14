@@ -125,4 +125,6 @@ Suppose $v_1, ..., v_m$ is a linearly independent list of vectors in $V$. Let $e
 
 Then $e_1, ..., e_m$ is an orthonormal list of vectors in $V$ such that span$(v_1, ..., v_j)$ = span $(e_1, ..., e_j)$ for $j = 1, ..., m$
 
+*** Theorem | Existence of Orthonormal Basis 
 
+Every finite-dimensional inner product space has an orthonormal basis 

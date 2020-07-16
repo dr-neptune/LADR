@@ -163,3 +163,18 @@ If $U$ is a subset of $V$, then the orthogonal complement of $U$, denoted $U^{\p
 + $V^{\perp} = \{0\}$
 + If $U$ is a subset of $V$, then $U \cap U^{\perp} \subset \{0\}$
 + If $U$ and $W$ are subsets of $V$ and $U \subset W$, then $W^{\perp} \subset U^{\perp}$
+
+*** Theorem | Direct Sum of a Subspace and its Orthogonal Complement 
+
+Suppose $U$ is a finite-dimensional subspace of $V$. Then $V = U \oplus U^{\perp}$
+
+*** Theorem | Dimension of the Orthogonal Complement 
+
+Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then dim $U^{\perp} =$ dim $V$ - dim $U$
+
+
+*** The Orthogonal Complement of the Orthogonal Complement 
+
+Suppose $U$ is a finite-dimensional subspace of $V$. Then $U = (U^{\perp})^{\perp}$
+
+

@@ -150,3 +150,16 @@ A linear functional on $V$ is a linear map from $V$ to $F$. In other words, a li
 
 Suppose $V$ is finite-dimensional and $\gamma$ is a linear functional on $V$. Then there is a unique vector $u \in V$ such that $\gamma(v) = \langle v, u \rangle$ for every $v \in V$. 
 
+** 6.C | Orthogonal Complements and Minimization Problems 
+
+*** Definition | Orthogonal Complement $U^{\perp}$ 
+
+If $U$ is a subset of $V$, then the orthogonal complement of $U$, denoted $U^{\perp}$, is the set of all vectors in $V$ that are orthogonal to every vector in $U$: $U^{\perp} = \{v \in V : \langle v, u \rangle = 0$ for all $u \in U\}$
+
+*** Theorem | Basic Properties of Orthogonal Complement 
+
++ If $U$ is a subset of $V$, then $U^{\perp}$ is a subspace of $V$
++ $\{0\}^{\perp} = V$
++ $V^{\perp} = \{0\}$
++ If $U$ is a subset of $V$, then $U \cap U^{\perp} \subset \{0\}$
++ If $U$ and $W$ are subsets of $V$ and $U \subset W$, then $W^{\perp} \subset U^{\perp}$

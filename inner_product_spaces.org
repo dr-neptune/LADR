@@ -4,8 +4,8 @@ In making the definition of a vector space, we generalized the linear structure 
 
 ** Learning Objectives for this Chapter 
 *** Cauchy-Schwarz Inequality 
-*** Gram-Schmidt Procedure 
-*** Linear Functionals on Inner Product Spaces 
+*** Gram-Schmidt Procedure
+*** Linear Functionals on Inner Product Spaces
 *** Calculating Minimum Distance to a Subspace 
 
 ** 6.A | Inner Products and Norms 
@@ -172,9 +172,29 @@ Suppose $U$ is a finite-dimensional subspace of $V$. Then $V = U \oplus U^{\perp
 
 Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then dim $U^{\perp} =$ dim $V$ - dim $U$
 
-
-*** The Orthogonal Complement of the Orthogonal Complement 
-
+*** Theorem | Orthogonal Complement of the Orthogonal Complement 
 Suppose $U$ is a finite-dimensional subspace of $V$. Then $U = (U^{\perp})^{\perp}$
+
+*** Definition | Orthogonal Projection 
+
+Suppose $U$ is a finite-dimensional subspace of $V$. The orthogonal projection of $V$ onto $U$ is the operation $P_U \in \mathcal{L}(V)$ defined as follows: For $v \in V$, write $v = u + w$, where $u \in U$ and $w \in U^{\perp}$
+
+*** Theorem | Properties of the Orthogonal Projection $P_U$
+
+- $P_U \in \mathcal{L}(V)$
+- $P_U u = u$ for every $u \in U$
+- $P_U w = 0$ for every $w \in U^{\perp}$
+- range $P_U = U$
+- null $P_u = U^{\perp}$
+- $v - P_U v \in U^{\perp}$
+- $P_U^2 = P_U$
+- $\lVert P_U v \rVert \leq \lVert v \rVert$
+- for every orthonormal basis $e_1, ..., e_m$ of $U$, $P_U v = \langle v, e_1 \rangle e_1 + ... + \langle v, e_m \rangle e_m$
+
+The following problem often arises: Given a subspace $U$ of $V$ and a point $v \in V$, find a point $u \in U$ such that $\lVert v - u \rVert$ is as small as possible. 
+
+*** Theorem | Minimizing the Distance to a Subspace 
+
+Suppose $U$ is a finite-dimensional subspace of $V$, $v \in V$, and $u \in U$. Then $\lVert v - P_U v \rVert = \lVert v - u\rVert$. Furthermore, the inequality is an equality iff $u = P_U v$. 
 
 

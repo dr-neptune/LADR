@@ -1,0 +1,32 @@
+* Operators on Inner Product Spaces 
+
+In this chapter, $V$ and $W$ denote finite-dimensional inner product spaces over $F$
+
+** Learning Objectives for this Chapter 
+
+- Adjoint
+- Spectral Theorem
+- Positive Operators
+- Isometries
+- Polar Decomposition
+- Singular Value Decomposition
+
+** Self-Adjoint and Normal Operators 
+
+*** Definition | Adjoint $T^*$
+
+Suppose $T \in \mathcal{L}(V, W)$. The adjoint of $T$ is the function $T^* : W \to V$ such that $\langle Tv, w \rangle = \langle v, T^* w \rangle$ for every $v \in V$ and every $w \in W$. 
+
+*** Theorem | The adjoint is a linear map 
+
+If $T \in \mathcal{L}(V, W)$, then $T^* \in \mathcal{L}(W, V)$
+
+*** Theorem | Properties of the Adjoint 
+
+- $(S + T)^* = S^* + T^*$ for all $S, T \in \mathcal{L}(V, W)$
+- $(\lambda T)^* = \bar{\lambda}T^*$ for all $\lambda \in F$ and $T \in \mathcal{L}(V, W)$
+- $(T^*)^* = T$ for all $T \in \mathcal{L}(V, W)$
+- $I^* = I$, where $I$ is the identity operator on $V$
+- $(ST)^* = T^* S^*$ for all $T \in \mathcal{L}(V, W)$ and $S \in \mathcal{L}(W, U)$ where $U$ is an inner product space over $F$ 
+
+

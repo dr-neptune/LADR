@@ -29,4 +29,39 @@ If $T \in \mathcal{L}(V, W)$, then $T^* \in \mathcal{L}(W, V)$
 - $I^* = I$, where $I$ is the identity operator on $V$
 - $(ST)^* = T^* S^*$ for all $T \in \mathcal{L}(V, W)$ and $S \in \mathcal{L}(W, U)$ where $U$ is an inner product space over $F$ 
 
+*** Theorem | Null Space and Range of $T^*$
+
+Suppose $T \in \mathcal{L}(V, W)$. Then 
+- null $T^*$ = $(\mathrm{range} T)^{\perp}$
+- range $T^*$ = $(\mathrm{null}T)^{\perp}$
+- null $T$ = $(\mathrm{range} T^*)^{\perp}$
+- range $T$ = $(\mathrm{null} T^*)^{\perp}$ 
+
+*** Definition | Conjugate Transpose 
+
+The conjugate transpose of an m-by-n matrix is the n-by-m matrix obtained by interchanging the rows and columns and then taking the complex conjugate of each entry
+
+*** Theorem | The matrix of $T^*$ 
+
+Let $T \in \mathcal{L}(V, W)$. Suppose $e_1, ..., e_n$ is an orthonormal basis of $V$ and $f_1, ..., f_m$ is an orthonormal basis of $W$. Then 
+
+$\mathcal{M}(T^*, (f_1, ..., f_m), (e_1, ..., e_n))$
+
+is the conjugate transpose of 
+
+$\mathcal{M}(T, (e_1, ..., e_n), (f_1, ..., f_m))$
+
+*** Definition | self-adjoint 
+
+An operator $T \in \mathcal{L}(V)$ is called self-adjoint if $T = T^*$. In other words, $T \in \mathcal{L}(V)$ is self-adjoint iff $\langle Tv, w \rangle = \langle w, Tv \rangle$ for all $v, w \in V$
+
+A good analogy to keep in mind (especially when $F = C$) is that the adjoint on $\mathcal{L}(V)$ plays a role similar to complex conjugation on $C$. A complex number $z$ is real iff $z = \bar{z}$; thus a self-adjoint operator ($T = T^*$) is analogous to a real number.  
+
+*** Theorem | Eigenvalues of Self-Adjoint Operators are Real 
+
+Every eigenvalue of a self-adjoint operator is real 
+
+*** Theorem | Over $C$, $Tv$ is orthogonal to $v$ for all $v$ only for the $0$ operator 
+
+Suppose $V$ is a complex inner product space and $T \in \mathcal{L}(V)$. Suppose $\langle Tv, v \rangle = 0$ for all $v \in V$. Then $T = 0$. 
 

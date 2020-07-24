@@ -65,3 +65,15 @@ Every eigenvalue of a self-adjoint operator is real
 
 Suppose $V$ is a complex inner product space and $T \in \mathcal{L}(V)$. Suppose $\langle Tv, v \rangle = 0$ for all $v \in V$. Then $T = 0$. 
 
+*** Theorem | Over $C$, $\langle Tv, v \rangle$ is real for all $v$ only for self-adjoint operators  
+
+Suppose $V$ is a complex inner product space and $T \in \mathcal{L}(V)$. Then $T$ is self-adjoint iff $\langle Tv, v \rangle \in R$ for every $v \in V$. 
+
+*** Theorem | If $T = T^*$ and $\langle Tv, v \rangle = 0$ for all $v$, then $T = 0$
+
+*** Definition | normal 
+
+- An operator on an inner product space is called normal if it commutes with its adjoint
+- In other words, $T \in \mathcal{L}(V)$ is normal if $T T^* = T^* T$
+
+

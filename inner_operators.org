@@ -12,9 +12,8 @@ In this chapter, $V$ and $W$ denote finite-dimensional inner product spaces over
 - Singular Value Decomposition
 
 ** Self-Adjoint and Normal Operators 
-
 *** Definition | Adjoint $T^*$
-
+    
 Suppose $T \in \mathcal{L}(V, W)$. The adjoint of $T$ is the function $T^* : W \to V$ such that $\langle Tv, w \rangle = \langle v, T^* w \rangle$ for every $v \in V$ and every $w \in W$. 
 
 *** Theorem | The adjoint is a linear map 
@@ -74,6 +73,41 @@ Suppose $V$ is a complex inner product space and $T \in \mathcal{L}(V)$. Then $T
 *** Definition | normal 
 
 - An operator on an inner product space is called normal if it commutes with its adjoint
-- In other words, $T \in \mathcal{L}(V)$ is normal if $T T^* = T^* T$
+- In other words, $T \in \mathcal{L}(V)$ is normal if $T T^* = T^* T$ 
+
+*** Theorem | $T$ is normal iff $\lVert Tv \rVert = \lVert T^*v \rVert$ for all $v$
+
+ An operator $T \in \mathcal{L}(V)$ is normal iff $\lVert Tv \rVert = \lVert T^*v \rVert$ for all $v \in V$
+
+*** Theorem | For $T$ normal, $T$ and $T^*$ have the same eigenvectors
+
+ Suppose $T \in \mathcal{L}(V)$ is normal and $v \in V$ is an eigenvector of $T$ with eigenvalue $\lambda$. Then $v$ is also an eigenvector of $T^*$ with eigenvalue $\bar{\lambda}$
+
+*** Theorem | Orthogonal eigenvectors for normal operators 
+
+ Suppose $T \in \mathcal{L}(V)$ is normal. Then eigenvectors of $T$ corresponding to distinct eigenvalues are orthogonal. 
+
+
+** The Spectral Theorem 
+
+The Spectral Theorem characterizes the operators as the normal operators when $F = C$ and as the self-adjoint operators when $F = R$. 
+We will be breaking the spectral theorem into the complex and real spectral theorems.
+
+The key part of the Complex Spectral Theorem states that if $F = C$ and $T \in \mathcal{L}(V)$ is normal, then $T$ has a diagonal matrix with respect to some orthonormal basis of $V$. 
+
+*** Theorem | Complex Spectral Theorem 
+
+Suppose $F = C$ and $T \in \mathcal{L}(V)$. Then the following are equivalent: 
+- $T$ is normal
+- $V$ has an orthonormal basis consisting of eigenvectors of $T$
+- $T$ has a diagonal matrix with respect to some orthonormal basis of $V$
+
+*** Theorem | Invertible Quadratic Expressions 
+
+Suppose $T \in \mathcal{L}(V)$ is self-adjoint and $b, c \in R$ are such that $b^2 < 4c$. Then $T^2 + bT + cI$ is invertible. 
+
+*** Theorem | Self-adjoint Operators have Eigenvalues 
+
+Suppose $V \neq \{0\}$ and $T \in \mathcal{L}(V)$ is a self-adjoint operator. Then $T$ has an eigenvalue 
 
 

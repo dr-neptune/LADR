@@ -130,3 +130,16 @@ If $F = C$, the complex spectral theorem gives a complete description of the nor
 
 If $F = R$, then the real spectral theorem gives a complete description of the self-adjoint operators on $V$. 
 
+** Positive Operators and Isometries
+
+*** Definition | Positive Operator 
+
+An operator $T \in \mathcal{L}(V)$ is called positive if $T$ is self-adjoint and $\langle Tv, v \rangle \geq 0$ for all $v \in V$
+
+If $V$ is a complex vector space, then the requirement that $T$ is self-adjoint can be dropped from the definition above. 
+
+*** Definition | Square Root 
+
+An operator $R$ is called a square root of an operator $T$ if $R^2 = T$
+
+

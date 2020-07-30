@@ -138,8 +138,51 @@ An operator $T \in \mathcal{L}(V)$ is called positive if $T$ is self-adjoint and
 
 If $V$ is a complex vector space, then the requirement that $T$ is self-adjoint can be dropped from the definition above. 
 
+Some mathematicians prefer the term positive semidefinite operator instead of positive operator. 
+
 *** Definition | Square Root 
 
 An operator $R$ is called a square root of an operator $T$ if $R^2 = T$
 
+*** Theorem | Characterization of Positive Operators 
 
+Let $T \in \mathcal{L}(V)$. Then the following are equivalent: 
+
+- $T$ is positive
+- $T$ is self-adjoint and all the eigenvalues of $T$ are non-negative
+- $T$ has a positive square root
+- $T$ has a self-adjoint square root
+- there exists an operator $R \in \mathcal{L}(V)$ such that $T = R^* R$
+
+*** Theorem | Each positive operator has only one positive square root 
+
+Every positive operator on $V$ has a unique positive square root 
+
+
+*** Definition | Isometry 
+
+An operator $S \in \mathcal{L}(V)$ is called an isometry if $\lVert Sv \rVert = \lVert v \rVert$ for all $v \in V$. In other words, an operator is an isometry if it preserves norms. 
+
+An isometry on a real inner product space is often called an orthogonal operator. An isometry on a complex inner product space is often called a unitary operator. 
+
+*** Theorem | Characterization of Isometries 
+
+Suppose $S \in \mathcal{L}(V)$. Then the following are equivalent:
+
+- $S$ is an isometry
+- $\langle Su, Sv \rangle = \langle u, v \rangle$ for all $u, v \in V$
+- $Se_1, ..., Se_n$ is orthonormal for every orthonormal list of vectors $e_1, ..., e_n$ in $V$
+- There exists an orthonormal basis $e_1, ..., e_n$ of $V$ such that $S e_1, ..., S e_n$ is orthonormal
+- $S^* S = I$
+- $S S^* = I$
+- $S^*$ is an isometry
+- $S$ is invertible and $S^{-1} = S^*$ 
+
+Do these proofs! 
+
+*** Theorem | Description of Isometries when $F = C$
+
+Suppose $V$ is a complex inner product space and $S \in \mathcal{L}(V)$. Then the following are equivalent 
+
+- $S$ is an isometry
+- There is an orthonormal basis of $V$ consisting of eigenvectors of $S$ whose corresponding eigenvalues all have absolute value 1 

@@ -176,9 +176,7 @@ Suppose $S \in \mathcal{L}(V)$. Then the following are equivalent:
 - $S^* S = I$
 - $S S^* = I$
 - $S^*$ is an isometry
-- $S$ is invertible and $S^{-1} = S^*$ 
-
-Do these proofs! 
+- $S$ is invertible and $S^{-1} = S^*$
 
 *** Theorem | Description of Isometries when $F = C$
 
@@ -186,3 +184,6 @@ Suppose $V$ is a complex inner product space and $S \in \mathcal{L}(V)$. Then th
 
 - $S$ is an isometry
 - There is an orthonormal basis of $V$ consisting of eigenvectors of $S$ whose corresponding eigenvalues all have absolute value 1 
+
+** Polar Decomposition and Singular Value Decomposition
+

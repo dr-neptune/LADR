@@ -187,3 +187,16 @@ Suppose $V$ is a complex inner product space and $S \in \mathcal{L}(V)$. Then th
 
 ** Polar Decomposition and Singular Value Decomposition
 
+*** Notation | $\sqrt{T}$
+
+If $T$ is a positive operator, then $\sqrt{T}$ denotes the unique positive square root of $T$
+
+*** Theorem | Polar Decomposition
+
+Suppose $T \in \mathcal{L}(V)$. Then there exists an isometry $S \in \mathcal{L}(V)$ such that $T = S \sqrt{T^* T}$
+
+*** Definition | Singular Values 
+
+Suppose $T \in \mathcal{L}(V)$. The singular values of $T$ are the eigenvalues of $\sqrt{T^* T}$, with each eigenvalue $\lambda$ repeated dim $E(\lambda, \sqrt{T^* T})$ times where $E$ is the notation for an eigenspace. 
+
+

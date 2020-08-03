@@ -199,4 +199,15 @@ Suppose $T \in \mathcal{L}(V)$. Then there exists an isometry $S \in \mathcal{L}
 
 Suppose $T \in \mathcal{L}(V)$. The singular values of $T$ are the eigenvalues of $\sqrt{T^* T}$, with each eigenvalue $\lambda$ repeated dim $E(\lambda, \sqrt{T^* T})$ times where $E$ is the notation for an eigenspace. 
 
+*** Theorem | Singular Value Decomposition
+
+Suppose $T \in \mathcal{L}(V)$ has singular values $s_1, ..., s_n$. Then there exist orthonormal bases $e_1, ..., e_n$ and $f_1, ..., f_n$ of $V$ such that $Tv = s_1 \langle v, e_1 \rangle f_1 + ... + s_n \langle v, e_n \rangle f_n$. 
+
+Every operator on $V$ has a diagonal matrix with respect to some orthonormal bases of $V$, provided that we are permitted to use two different bases rather than a single basis as customary when working with operators. 
+
+*** Theorem | Singular Values without taking the square root of an operator 
+
+Suppose $T \in \mathcal{L}(V)$. Then the singular values of $T$ are the nonnegative square roots of the eigenvalues of $T^* T$, with each eigenvalue repeated dem $E(\lambda, T^* T)$ times. 
+
+
 

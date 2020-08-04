@@ -1,0 +1,34 @@
+* Operators on Complex Vector Spaces
+
+Our assumptions for this chapter are the following: 
+
+- $F$ denotes $R$ or $C$
+- $V$ denotes a finite-dimensional nonzero vector space over $F$
+
+** Learning Objectives for this Chapter 
+
+- Generalized Eigenvectors and Generalized Eigenspaces
+- Characteristic Polynomial and the Cayley-Hamilton Theorem
+- Decomposition of an Operator
+- Minimal Form
+- Jordan Form 
+
+** Generalized Eigenvectors and Nilpotent Operators 
+
+We begin this chapter with a study of null spaces of powers of an operator 
+
+*** Theorem | Sequence of Increasing Null Spaces 
+
+Suppose $T \in \mathcal{L}(V)$. Then $\{0\} = \mathrm{null} T^0 \subset \mathrm{null} T^1 \subset ... \subset \mathrm{null} T^k \subset \mathrm{null} T^{k + 1} \subset$
+  
+*** Theorem | Equality in the Sequence of Null Spaces 
+
+Suppose $T \in \mathcal{L}(V)$. Suppose $m$ is a non-negative integer such that $\mathrm{null} T^m = \mathrm{null}T^{m + 1}$. 
+Then $\mathrm{null} T^m = \mathrm{null} T^{m + 1} = \mathrm{null} T^{m + 2} = \mathrm{null} T^{m + 3} =$
+
+
+*** Theorem | Null Spaces Stop Growing 
+
+Suppose $T \in \mathcal{L}(V)$. Let $n = \mathrm{dim}(V)$. Then $\mathrm{null}T^n = \mathrm{null}T^{n + 1} = \mathrm{null}T^{n + 2} =$
+
+

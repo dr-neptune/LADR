@@ -26,9 +26,14 @@ Suppose $T \in \mathcal{L}(V)$. Then $\{0\} = \mathrm{null} T^0 \subset \mathrm{
 Suppose $T \in \mathcal{L}(V)$. Suppose $m$ is a non-negative integer such that $\mathrm{null} T^m = \mathrm{null}T^{m + 1}$. 
 Then $\mathrm{null} T^m = \mathrm{null} T^{m + 1} = \mathrm{null} T^{m + 2} = \mathrm{null} T^{m + 3} =$
 
-
 *** Theorem | Null Spaces Stop Growing 
 
 Suppose $T \in \mathcal{L}(V)$. Let $n = \mathrm{dim}(V)$. Then $\mathrm{null}T^n = \mathrm{null}T^{n + 1} = \mathrm{null}T^{n + 2} =$
+
+The equality in the sequence of null spaces theorem raises the question of whether there exists a non-negative integer $m$ such that null $T^m$ = null $T^{m + 1}$. The proposition above shows that this equality holds at least when $m$ equals the dimension of the vetor space on which $T$ operates. 
+
+*** Theorem | $V$ is the direct sum of null $T^{\mathrm{dim}V}$ and range $T^{\mathrm{dim}V}$
+
+Suppose $T \in \mathcal{L}(V)$. Let $n = \mathrm{dim}V$. Then $V = \mathrm{null}T^n \oplus \mathrm{range}T^n$
 
 

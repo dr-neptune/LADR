@@ -37,3 +37,16 @@ The equality in the sequence of null spaces theorem raises the question of wheth
 Suppose $T \in \mathcal{L}(V)$. Let $n = \mathrm{dim}V$. Then $V = \mathrm{null}T^n \oplus \mathrm{range}T^n$
 
 
+
+*** Definition | Generalized Eigenvector 
+
+Suppose $T \in \mathcal{L}(V)$ and $\lambda$ is an eigenvalue of $T$. A vector $v \in V$ is called a generalized eigenvector of $T$ corresponding to $\lambda$ if $v \neq 0$ and $(T - \lambda I)^j v = 0$ for some positive integer $j$. 
+
+*** Definition | Generalized Eigenspace $G(\lambda, T)$
+
+Suppose $T \in \mathcal{L}(V)$ and $\lambda \in F$. The generalized eigenspace of $T$ corresponding to $\lambda$, denoted $G(\lambda, T)$ is defined to be the set of all generalized eigenvectors of $T$ corresponding to $\lambda$, along with the 0 vector. 
+
+*** Theorem | Description of Generalized Eigenspaces 
+
+Suppose $T \in \mathcal{L}(V)$ and $\lambda \in F$. Then $G(\lambda, T) = \mathrm{null}(T - \lambda I)^{\mathrm{dim}V}$. 
+

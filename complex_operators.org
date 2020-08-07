@@ -30,13 +30,11 @@ Then $\mathrm{null} T^m = \mathrm{null} T^{m + 1} = \mathrm{null} T^{m + 2} = \m
 
 Suppose $T \in \mathcal{L}(V)$. Let $n = \mathrm{dim}(V)$. Then $\mathrm{null}T^n = \mathrm{null}T^{n + 1} = \mathrm{null}T^{n + 2} =$
 
-The equality in the sequence of null spaces theorem raises the question of whether there exists a non-negative integer $m$ such that null $T^m$ = null $T^{m + 1}$. The proposition above shows that this equality holds at least when $m$ equals the dimension of the vetor space on which $T$ operates. 
+The equality in the sequence of null spaces theorem raises the question of whether there exists a non-negative integer $m$ such that null $T^m$ = null $T^{m + 1}$. The proposition above shows that this equality holds at least when $m$ equals the dimension of the vector space on which $T$ operates. 
 
 *** Theorem | $V$ is the direct sum of null $T^{\mathrm{dim}V}$ and range $T^{\mathrm{dim}V}$
 
 Suppose $T \in \mathcal{L}(V)$. Let $n = \mathrm{dim}V$. Then $V = \mathrm{null}T^n \oplus \mathrm{range}T^n$
-
-
 
 *** Definition | Generalized Eigenvector 
 
@@ -49,4 +47,27 @@ Suppose $T \in \mathcal{L}(V)$ and $\lambda \in F$. The generalized eigenspace o
 *** Theorem | Description of Generalized Eigenspaces 
 
 Suppose $T \in \mathcal{L}(V)$ and $\lambda \in F$. Then $G(\lambda, T) = \mathrm{null}(T - \lambda I)^{\mathrm{dim}V}$. 
+
+*** Theorem | Linearly Independent Generalized Eigenvectors
+
+Let $T \in \mathcal{L}(V)$. Suppose $\lambda_1, ..., \lambda_m$ are distinct eigenvalues of $T$ and $v_1, ..., v_m$ are corresponding generalized eigenvectors. Then $v_1, ..., v_m$ is linearly independent. 
+
+*** Definition | Nilpotent 
+
+An operator is called nilpotent if some power of it equals 0
+
+*** Theorem | Nilpotent Operator Raised to Dimension of Domain is 0 
+
+Suppose $N \in \mathcal{L}(V)$ is nilpotent. Then $N^{\mathrm{dim}(V)} = 0$
+
+*** Theorem | Matrix of a Nilpotent Operator 
+
+Suppose $N$ is a nilpotent operator on $V$. Then there is a basis of $V$ with respect to which the matrix of $N$ has the form 
+
+$\begin{pmatrix} 0 \cdots * \\ \hspace \ddots \hspace \\ 0 \hspace 0 \end{pmatrix}$
+
+here all entries on and below the diagonal are 0s.
+
+** Decomposition of an Operator 
+
 
